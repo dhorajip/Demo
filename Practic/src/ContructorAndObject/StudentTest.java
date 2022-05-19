@@ -1,13 +1,19 @@
 package ContructorAndObject;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+
 public class StudentTest {
 
 	public static void main(String[] args) {
 		Student s1 = new Student("Parth", 95,85,75);
-		Student s2 = new Student("Pathik", 94,84,74);
-		Student s3 = new Student("Piyush", 93,83,73);
+		Student s2 = new Student("Pathik", 91,81,71);
+		Student s3 = new Student("Piyush", 94,84,74);
 		Student s4 = new Student("Jaydeep", 92,82,72);
-		Student s5 = new Student("Sujay", 91,81,71);
+		Student s5 = new Student("Sujay", 90,59,56);
 		
 		// Code for Maximum marks in English
 		
@@ -60,9 +66,25 @@ public class StudentTest {
 			e=b;
 			}
 		}
-		
+		 
 		System.out.println(leastmarks + " is the lowest total amongst all.");
 		System.out.println(e.name + " has scored the lowest marks and scored 5th rank.");
-		}	
+		}
+		System.out.println("-------------------------------------------------------------------------------");
+		// Code for All the ranks with name
+		Student[] listOfStudent = {s1 , s2 , s3 , s4 , s5};
+		Arrays.sort(listOfStudent, Comparator.comparing(Student::getTotalMarks));
+		
+		int j = 1;
+		
+		for(int i = listOfStudent.length-1; i>=0; i--) {
+			
+			Student student = listOfStudent[i];
+			
+			System.out.println(" ( " + j + " ) " + student.name);
+			System.out.println("Score: " + student.totalMarks);
+			System.out.println();
+			j++;
+		}
+		}	 
 	}
-}
