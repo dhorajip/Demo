@@ -1,7 +1,7 @@
 package OOPS;
 
 abstract class Shape {
-	private String shapeName;
+	String shapeName;
 
 	abstract double area();
 
@@ -12,12 +12,8 @@ abstract class Shape {
 	// tostring method
 	@Override
 	public String toString() {
-		return "Shape [shapeName=" + shapeName + "]";
+		return "for Shape : " + shapeName ;
 	}
 
-	// Getters and Setters
-	public String getShapeName() {
-		return shapeName;
-	}
-
+	
 }

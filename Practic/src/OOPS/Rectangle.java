@@ -8,7 +8,7 @@ class Rectangle extends Shape {
 		super();
 		this.length = length;
 		this.width = width;
-		this.setShapeName("sphere");
+		this.setShapeName("rectangle");
 	}
 
 	@Override

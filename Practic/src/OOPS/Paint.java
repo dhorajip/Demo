@@ -11,8 +11,9 @@ public class Paint {
 
 		double amount = shape.area() / coverage;
 		double rounded = Math.round(amount*100)/100.0;
-		System.out.println("shapeName " + shape.getShapeName());
-		System.out.println("The amount is : " + rounded);
+		//System.out.println(shape);
+		System.out.println("The amount of paint needed " + shape + " = " + rounded);
+		System.out.println("----------------------------------------------------------------------------");
 	}
 
 }
