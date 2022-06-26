@@ -6,7 +6,7 @@ class Cylinder extends Shape {
 
 	// Constructor to initialize values
 	public Cylinder(int radius, int height) {
-		super();
+		
 		this.radius = radius;
 		this.height = height;
 		this.setShapeName("cylinder");

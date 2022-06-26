@@ -5,7 +5,7 @@ class Rectangle extends Shape {
 
 	// Constructor to initialize values
 	public Rectangle(int length, int width) {
-		super();
+		
 		this.length = length;
 		this.width = width;
 		this.setShapeName("rectangle");

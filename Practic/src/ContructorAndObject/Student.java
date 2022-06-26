@@ -14,7 +14,7 @@ public class Student {
 		this.Sciencescore = sciencescore;
 		this.totalMarks = this.Englishscore + this.Mathscore + this.Sciencescore;
 	}
-	
+
 	public int getTotalMarks() {
 		return totalMarks;
 	}

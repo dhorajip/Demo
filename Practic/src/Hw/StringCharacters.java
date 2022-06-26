@@ -7,7 +7,7 @@ public class StringCharacters {
 		int b = a.replace("a", "").length();
 		int count  = a.length()-b;
 		System.out.println("The length of String is : " + a.length());
-		System.out.println("The occurence of character : " + count);
+		System.out.println("The occurence of character \"a\" : " + count);
 
 	}
 

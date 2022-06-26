@@ -7,11 +7,11 @@ public class Paint {
 		this.coverage = coverage;
 	}
 
-	public void calculateAmount(Shape shape) {
+	public void amount(Shape shape) {
 
-		double amount = shape.area() / coverage;
-		double rounded = Math.round(amount*100)/100.0;
-		//System.out.println(shape);
+		double paintneeded = shape.area() / coverage;
+		double rounded = Math.round(paintneeded * 100) / 100.0;
+		// System.out.println(shape);
 		System.out.println("The amount of paint needed " + shape + " = " + rounded);
 		System.out.println("----------------------------------------------------------------------------");
 	}
